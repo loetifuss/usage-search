@@ -1,0 +1,21 @@
+<idea-plugin>
+    <id>de.loetifuss.idea.usage.search</id>
+    <name>Find Usages Plugin</name>
+    <version>1.0</version>
+    <vendor email="test@example.com" url="https://example.com">ACME Ltd.</vendor>
+    <description>
+        This plugin allows searching for references to Java elements in all libraries
+        of the entire classpath, even if the classes are not imported in the project.
+    </description>
+    <change-notes>
+        <note version="1.0">
+            Search for references in all referenced libraries.
+        </note>
+    </change-notes>
+    <actions>
+        <action id="de.loetifuss.idea.FindUsagesAction" class="de.loetifuss.idea.FindUsagesAction" text="Find External Usages">
+            <add-to-group group-id="EditorPopupMenu1" anchor="first" relative-to-action="FindUsages"/>
+            <keyboard-shortcut keymap="$default" first-keystroke="alt F8"/>
+        </action>
+    </actions>
+</idea-plugin>
